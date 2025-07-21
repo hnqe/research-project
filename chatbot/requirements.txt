@@ -1,0 +1,28 @@
+# --- Framework da Aplicação ---
+fastapi
+uvicorn[standard]
+
+# --- Manipulação de Dados e Ambiente ---
+pandas
+pyarrow
+numpy
+python-dotenv
+tqdm
+
+# --- LangChain - Core e Integrações ---
+langchain
+langchain-core
+langchain-community
+langchain-huggingface
+langchain-cohere
+
+# --- Ecossistema de IA (LLM, Embeddings, Vector Store) ---
+cohere
+sentence-transformers
+transformers
+accelerate
+# sentencepiece  # Dependência de tokenizers, descomente se necessário
+faiss-cpu        # Ou faiss-gpu para ambientes com GPU
+
+# --- Validação de Dados ---
+pydantic

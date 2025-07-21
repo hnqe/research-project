@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat CGU - Assistente de Pedidos de Acesso à Informação</title>
+    <link rel="icon" type="image/svg+xml" href="/static/img/favicon.svg">
+    <link rel="stylesheet" href="/static/css/styles.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <h1 class="header-title">🗨️ Chat CGU</h1>
+            <div id="stats">📊 Carregando...</div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="chat-section">
+            <div class="messages" id="messages">
+                <div class="message bot">
+                    <div class="message-content">
+                        <p>👋 Olá! Sou o assistente de pedidos de acesso à informação da CGU.</p>
+                        <p>Posso ajudar você a encontrar informações sobre pedidos registrados. Como posso ajudar?</p>
+                    </div>
+                </div>
+
+                <div class="examples">
+                    <h3>Experimente perguntar:</h3>
+                    <div class="example-grid">
+                        <button class="example-btn" data-question="Quais pedidos foram feitos sobre COVID-19?">
+                            🦠 Pedidos sobre COVID-19
+                        </button>
+                        <button class="example-btn" data-question="Mostre pedidos sobre orçamento público">
+                            💰 Orçamento público
+                        </button>
+                        <button class="example-btn" data-question="Quais pedidos foram negados?">
+                            ❌ Pedidos negados
+                        </button>
+                        <button class="example-btn" data-question="Pedidos sobre transparência">
+                            🔍 Transparência
+                        </button>
+                        <button class="example-btn" data-question="Pedidos sobre educação">
+                            📚 Educação
+                        </button>
+                        <button class="example-btn" data-question="Contratos e licitações">
+                            📄 Contratos
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="typing" id="typing">
+                <span class="typing-dot"></span>
+                <span class="typing-dot"></span>
+                <span class="typing-dot"></span>
+            </div>
+
+            <div class="input-container">
+                <form class="input-form" id="chatForm">
+                    <input
+                        type="text"
+                        id="messageInput"
+                        class="message-input"
+                        placeholder="Digite sua pergunta..."
+                        maxlength="500"
+                        required
+                    >
+                    <button type="submit" id="sendButton" class="send-button">
+                        Enviar
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <aside class="sources-sidebar" id="sourcesContainer">
+            <div class="sources-header">
+                <h2 class="sources-title">📄 Fontes Encontradas</h2>
+                <button class="sources-toggle" id="sourcesToggle">✕</button>
+            </div>
+            <div class="sources-content">
+                <div id="sourcesList"></div>
+            </div>
+        </aside>
+    </main>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
