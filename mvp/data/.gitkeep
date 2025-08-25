@@ -1,0 +1,4 @@
+# This file keeps the data/ directory in git
+# The actual data files are ignored and should come from:
+# 1. Docker image: hnqe/mvp-cgu-data:latest (recommended)
+# 2. Local processing via ../LangChainIMPL.ipynb notebook

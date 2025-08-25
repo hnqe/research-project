@@ -1,0 +1,72 @@
+.env
+.env.*
+!/.env.example
+
+venv/
+.venv/
+env/
+
+data/vetores/
+data/*.parquet
+
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+.coverage
+htmlcov/
+
+/build/
+/dist/
+/*.egg-info/
+*.egg
+
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+
+# Dados e arquivos grandes
+chatbot/data/*.parquet
+chatbot/data/vetores/**/index.faiss
+chatbot/data/vetores/**/index.pkl
+
+# Dados do MVP (arquivos grandes)
+mvp/data/*.parquet
+mvp/data/vetores/
+mvp/data.tar*
+
+# Qdrant database storage
+mvp/qdrantstorage/
+qdrantstorage/
+
+# Node modules (frontend)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+build/
+dist/
+
+# Temporary and cache files
+*.cache
+*.pid
+*.seed
+*.tgz
+.npm
+
+# Sistema específico
+desktop.ini
+
+# Arquivos temporários de desenvolvimento
+*.tmp
+*.temp

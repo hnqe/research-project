@@ -1,0 +1,13 @@
+FROM alpine:latest
+
+WORKDIR /
+
+# Copiar e extrair dados compactados
+COPY data.tar .
+RUN tar -xf data.tar && rm data.tar
+
+# Volume para compartilhar dados
+VOLUME ["/data"]
+
+# Manter container rodando para servir dados
+CMD ["tail", "-f", "/dev/null"]
