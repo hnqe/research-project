@@ -528,3 +528,15 @@ Para detalhes técnicos, troubleshooting e comparações:
 **👉 Consulte: `SCRIPTS.md`**
 
 ---
+
+## 📊 Diagramas
+
+### Diagrama de Arquitetura 
+
+<img width="3840" height="2096" alt="Arquitetura Geral do MVP CGU" src="https://github.com/user-attachments/assets/df29e856-8036-4a07-b9eb-60bdc838a808" />
+
+### Diagrama de Sequência
+
+<img width="3840" height="2547" alt="Diagrama de Sequência MVP CGU" src="https://github.com/user-attachments/assets/da7dce83-cb1c-43f3-9b5b-75c2114f82a9" />
+
+---
